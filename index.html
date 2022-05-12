@@ -13,22 +13,22 @@
         <div class="header__logo"><p>mycompany</p></div>
         <nav>
             <div class="topnav" id="myTopnav">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">SERVICES</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">TESTIMONAILS</a>
-                <a href="#">CONTACT</a>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#service">SERVICES</a>
+                <a href="#work">PORTFOLIO</a>
+                <a href="#testimonials">TESTIMONAILS</a>
+                <a href="#contact">CONTACT</a>
                 <a href="#"  class="icon">&#9776;</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="main__welcome">
+        <div id="home" class="main__welcome">
             <h1>WELCOME ON <span class="mycompany">MY COMPANY</span></h1>
             <p>We are a digital agency with <b>years of experience</b> and with <b>extraordinary people</b></p>
         </div>
-        <div class="wrapper">
+        <div id="about" class="wrapper">
             <div class="main__about">
                 <div class="about__left">
                    <img class="mw-100" src="img/mac.png" alt="mac">
@@ -44,10 +44,9 @@
                 </div>
             </div>
         </div>
-        <div class="main__team">
+        <div id="team" class="main__team">
             <div class="wrapper">
                 <h1>OUR TEAM</h1>
-                <div class="line"></div>
                 <div class="team__cards">
                     <div class="card">
                         <div class="photo"></div>
@@ -76,10 +75,9 @@
                 </div>
             </div>   
         </div>
-        <div class="main__services">
+        <div id="service" class="main__services">
             <div class="wrapper">
                 <h1>OUR SERVICES</h1>
-                <div class="line"></div>
                 <p class="paragraph_services">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis,
                      at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.
@@ -109,10 +107,9 @@
                 
             </div>
         </div>
-        <div class="main__clients">
+        <div id="client" class="main__clients">
             <div class="wrapper">
                 <h1><span class="tin_span">SOME OF</span> OUR CLIENTS</h1>
-                <div class="line"></div>
                 <div class="clients__names">
                     <img src="img/clients/chanel.png" alt="chanel">
                     <img src="img/clients/zara.png" alt="zara">
@@ -122,10 +119,9 @@
                 </div>
             </div>
         </div>
-        <div class="main__work">
+        <div id="work" class="main__work">
             <div class="wrapper">
                 <h1>TAKE A LOOK AT OUR WORK</h1>
-                <div class="line"></div>
                 <p class="par__work">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, 
                     at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet,
                      consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus 
@@ -158,21 +154,53 @@
 
 
 
-        <div class="main__testimonials">
+        <div id="testimonials" class="main__testimonials">
             <div class="wrapper">
                 <h1>OUR CLIENTS' <span class="tin_span">TESTIMONIALS</span></h1>
-                <div class="line"></div>
                 <p class="paragraph__testimonials">
                     This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
                      "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                 </p>
                 <p class="author">Dean Martin,<span class="tin_span"> CEO Acme Inc.</span></p>
             </div>
-            
-            
         </div>
+         <section id="contact" class="contact__form">
+             <div class="main__contact">
+                 <div class="wrapper">
+                    <h1>CONTACT US</h1>
+                    
+                 </div>
+             </div>
+             <div class="contact_wrapper">
+                <p class="paragraph"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis,
+                    at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa
+                     tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </i></p>
+                 <form action="#" name="newForm" method="POST">
+                    <div class="form__inputs">
+                        <p>Name <span class="red">*</span><input type="text"></p>
+                        <p>Email adress <span class="red">*</span><input type="text"></p>
+                    </div>
+                    <p>Message <span class="red">*</span></p>
+                    <textarea name="text"></textarea>
+                    <div class="button__block">
+                        <input type="submit"  value="SEND">
+                    </div>
+                 </form>
+             </div>
+         </section>
     </main>
-
+    <footer>
+        <div class="wrapper">
+            <div class="social">
+                <img src="img/social/facebook.png" alt="">
+                <img src="img/social/twitter.png" alt="">
+                <img src="img/social/google.png" alt="">
+                <img src="img/social/linkedin.png" alt="">
+                <img src="img/social/dribbble.png" alt="">
+            </div>
+        </div>
+        
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
