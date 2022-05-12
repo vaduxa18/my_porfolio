@@ -36,7 +36,7 @@ nav{
    font-size: 14px;
    font-weight: bold;
    text-align: center;
-   padding: 12px 16px;
+   padding: 11px 16px;
 
 }
 .topnav a:hover{
@@ -62,6 +62,9 @@ main .main__welcome p{
 main .main__welcome h1{
     font-size: 44px;
     color:#999999;
+}
+main .main__welcome h1::after{
+    display:none;
 }
 main .main__welcome h1 .mycompany{
     color: #fcac45;
@@ -91,6 +94,9 @@ main .main__welcome h1 .mycompany{
     color:#6c6c6c;
    
 }
+.about__right h1:after{
+    display: none;
+}
 .about__right li{
     list-style-type: none; 
     background: url(img/mark.png) 0px no-repeat;
@@ -118,14 +124,14 @@ main .main__welcome h1 .mycompany{
     font-size: 44px;
     padding-bottom: 30px;
 }
-.line{
+/*.line{
     width: 100px;
     height: 3px;
     background: #fcac45;
     position: relative;
     left: 46.5%;
     margin-bottom: 85px;
-}
+}*/
 .photo{
     background: #d7d7d7;
     width: 128px;
@@ -255,6 +261,92 @@ main .main__welcome h1 .mycompany{
 .gallery img:hover{
     opacity: 0.9;
 }
+.contact__form{
+    padding: 100px 0 100px 0;
+}
+.contact_wrapper{
+    width: 753px;
+    margin: 0 auto; 
+    color:#636363;
+}
+.red{
+    color: red;
+}
+.form__inputs{
+    display: flex;
+    margin-top: 100px;
+}
+input{
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+input:first-of-type{
+    margin-right: 28px;
+}
+textarea{
+    width: 100%;
+    height: 163px;
+}
+input, textarea{
+    margin-top: 5px;
+    border: 1px solid #999999;
+}
+.button__block{
+    display: flex;
+    justify-content: flex-end;
+}
+input[type=submit]{
+    height: 40px;
+    width: 165px;
+    background: #fcac45;
+    color: #fff;
+    border: 0px;
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 30px;
+}
+.main__contact{
+    text-align: center;
+}
+.main__contact h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+.contact_wrapper .paragraph{
+    text-align: center;
+    font-size: 16px;
+}
+.contact_wrapper p{
+    font-size: 14px;
+}
+h1:after{
+    content:"";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom: 3px solid #fcac45;
+}
+footer{
+    background-color: #222222;
+    height: auto;
+    width: 100%;
+}
+.social{
+   display:flex;
+   justify-content: center;
+}
+.social img{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 12px;
+}
+.social img:hover{
+   opacity: 0.6;
+}
 
 
 
@@ -353,6 +445,28 @@ main .main__welcome h1 .mycompany{
         margin-left: 10%;
     }
     
+}
+@media screen and (max-width: 810px){
+    .form__inputs{
+       display:block;
+    }
+    input{
+        width: 100%;
+    }
+    .contact_wrapper{
+        width:500px;
+    }
+}
+@media screen and (max-width: 560px){
+    .form__inputs{
+       display:block;
+    }
+    input{
+        width: 100%;
+    }
+    .contact_wrapper{
+        width:300px;
+    }
 }
 
 
